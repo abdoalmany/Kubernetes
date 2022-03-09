@@ -12,7 +12,7 @@
 kubectl create deployment redis --image=redis
 ```
 
-![](/home/abdoalmany/Desktop/kubernetes/lab1/2.png)
+![](https://imgur.com/gqhKxXY.png)
 
 **3- Create a pod with the name Nginx and with the image nginx123.**
 
@@ -22,7 +22,7 @@ kubectl create deployment redis --image=redis
 kubectl create deployment nginx --image=nginx123
 ```
 
-![](/home/abdoalmany/Desktop/kubernetes/lab1/3.png)
+![](https://imgur.com/WTq1piP.png)
 
 **4- What is the Nginx pod status?**
 
@@ -30,7 +30,7 @@ kubectl create deployment nginx --image=nginx123
 kubectl get pods
 ```
 
-![](/home/abdoalmany/Desktop/kubernetes/lab1/4.png)
+![](https://imgur.com/enzNe1Y.png)
 
 **5- Change the Nginx pod image to Nginx check the status again**
 
@@ -39,7 +39,7 @@ kubectl edit deploy nginx
 kubectl get deploy
 ```
 
-![](/home/abdoalmany/Desktop/kubernetes/lab1/5.png)
+![](https://imgur.com/F4b80p6.png)
 
 **6- How many ReplicaSets exist on the system?**
 
@@ -47,7 +47,7 @@ kubectl get deploy
 kubectl get rs
 ```
 
-![](/home/abdoalmany/Desktop/kubernetes/lab1/6.png)
+![](https://imgur.com/8wwrLR0.png)
 
 **7- Create a ReplicaSet with**
 
@@ -61,11 +61,11 @@ kubectl get rs
 kubectl create deploy replica-set-1 --image=busybox --replicas=3
 ```
 
-![](/home/abdoalmany/Desktop/kubernetes/lab1/7.png)
+![](https://imgur.com/oFAuff1.png)
 
 **8- Scale the ReplicaSet replica-set-1 to 5 PODs.**
 
-![](/home/abdoalmany/Desktop/kubernetes/lab1/8.png)
+![](https://imgur.com/fa74cjf.png)
 
 **9- How many PODs are READY in the replica-set-1?**
 
@@ -79,7 +79,7 @@ kubectl create deploy replica-set-1 --image=busybox --replicas=3
 kubectl delete pod replica-set-1-7bdc749c8c-9mnpc
 ```
 
-![](/home/abdoalmany/Desktop/kubernetes/lab1/10.png)
+![](https://imgur.com/45cdOBe.png)
 
 > Because of that replica set created a new pod to keep them 5 in the replica set .
 
@@ -89,7 +89,7 @@ kubectl delete pod replica-set-1-7bdc749c8c-9mnpc
 
 ​	4 Replica sets 
 
-![](/home/abdoalmany/Desktop/kubernetes/lab1/11.png)
+![](https://imgur.com/QQiU9Mm.png)
 
 **12- Create a Deployment with**
 
@@ -191,4 +191,5 @@ kubectl get deployment beta
 ```
 
 > NAME   READY   UP-TO-DATE   AVAILABLE   AGE
+>
 > beta  	  2/2   				  	  2            2           37m

@@ -4,7 +4,7 @@
 
 **1- Install k8s cluster (minikube) (optional you can use https://www.katacoda.com/courses/kubernetes/playground)**
 
-![](/home/abdoalmany/Desktop/kubernetes/lab1/1.png)
+![](https://imgur.com/3VOPJQ2.png)
 
 **2- Create a pod with the name Redis and with the image Redis.**
 

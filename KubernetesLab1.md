@@ -12,7 +12,7 @@
 kubectl create deployment redis --image=redis
 ```
 
-![](https://imgur.com/gqhKxXY.png)
+![](https://imgur.com/enzNe1Y.png)
 
 **3- Create a pod with the name Nginx and with the image nginx123.**
 
@@ -22,7 +22,7 @@ kubectl create deployment redis --image=redis
 kubectl create deployment nginx --image=nginx123
 ```
 
-![](https://imgur.com/WTq1piP.png)
+![](https://imgur.com/F4b80p6.png)
 
 **4- What is the Nginx pod status?**
 
@@ -30,7 +30,7 @@ kubectl create deployment nginx --image=nginx123
 kubectl get pods
 ```
 
-![](https://imgur.com/enzNe1Y.png)
+![](https://imgur.com/8wwrLR0.png)
 
 **5- Change the Nginx pod image to Nginx check the status again**
 
@@ -39,7 +39,7 @@ kubectl edit deploy nginx
 kubectl get deploy
 ```
 
-![](https://imgur.com/F4b80p6.png)
+![](https://imgur.com/oFAuff1.png)
 
 **6- How many ReplicaSets exist on the system?**
 
@@ -47,7 +47,7 @@ kubectl get deploy
 kubectl get rs
 ```
 
-![](https://imgur.com/8wwrLR0.png)
+![](https://imgur.com/fa74cjf.png)
 
 **7- Create a ReplicaSet with**
 
@@ -61,11 +61,11 @@ kubectl get rs
 kubectl create deploy replica-set-1 --image=busybox --replicas=3
 ```
 
-![](https://imgur.com/oFAuff1.png)
+![](https://imgur.com/45cdOBe.png)
 
 **8- Scale the ReplicaSet replica-set-1 to 5 PODs.**
 
-![](https://imgur.com/fa74cjf.png)
+![](https://imgur.com/QQiU9Mm.png)
 
 **9- How many PODs are READY in the replica-set-1?**
 
@@ -79,7 +79,7 @@ kubectl create deploy replica-set-1 --image=busybox --replicas=3
 kubectl delete pod replica-set-1-7bdc749c8c-9mnpc
 ```
 
-![](https://imgur.com/45cdOBe.png)
+![](https://imgur.com/gqhKxXY.png)
 
 > Because of that replica set created a new pod to keep them 5 in the replica set .
 
@@ -89,7 +89,7 @@ kubectl delete pod replica-set-1-7bdc749c8c-9mnpc
 
 ​	4 Replica sets 
 
-![](https://imgur.com/QQiU9Mm.png)
+![](https://imgur.com/WTq1piP.png)
 
 **12- Create a Deployment with**
 

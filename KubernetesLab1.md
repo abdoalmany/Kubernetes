@@ -191,5 +191,8 @@ kubectl get deployment beta
 ```
 
 > NAME   READY   UP-TO-DATE   AVAILABLE   AGE
->
-> beta  	  2/2   				  	  2            2           37m
+
+> beta  	  2/2   		2            2           37m
+
+
+### check https://github.com/abdoalmany/Kubernetes/blob/main/my-namespace.yml & https://github.com/abdoalmany/Kubernetes/blob/main/beta.yaml 

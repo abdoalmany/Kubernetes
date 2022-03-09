@@ -1,0 +1,46 @@
+# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "1"
+  creationTimestamp: "2022-03-09T07:38:04Z"
+  generation: 1
+  labels:
+    app: beta
+  name: beta
+  namespace: finance
+  resourceVersion: "18659"
+  uid: 816683bb-bda0-4d0a-ba16-a1be84292f15
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 2
+ #   revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: beta
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: beta
+    spec:
+      containers:
+      - image: redis
+        imagePullPolicy: Always
+        name: redis
+        resources: 
+          requests:
+            cpu: "0.5"
+            memory: "1Gi" 
+          limits:
+            cpu: "1"
+            memory: "2Gi"
